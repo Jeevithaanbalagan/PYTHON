@@ -1,0 +1,22 @@
+class rect:
+    def set_dim(self,w,h):
+        self.w=w
+        self.h=h
+    def area(self):
+        print(self.w*self.h)
+    def peri(self):
+        print(2*self.w+self.h)
+l=[]
+n=int(input("ENTER THE NUMBER  OF RECTANGLE :"))
+for i in range (n):
+    r=rect()
+    w=int(input("Enter the number for width {}".format(i+1)))
+    h=int(input("Enter the number for height {}".format(i+1)))
+    r.set_dim(w,h)
+    l.append(r)
+for i in range(n):
+    print ("RECTANGLE NUMBER {}".format(i+1))
+    l[i].area()
+    l[i].peri()
+    print("-------------------------")
+    
