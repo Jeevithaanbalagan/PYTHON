@@ -1,0 +1,31 @@
+class cognizant():
+    company = "Cognizant"
+    tax_percentage = 0.10
+    def set_dim(self,Name,Age,Salary,Share_Percent):
+        self.Name = Name
+        self.Age = Age
+        self.Salary = Salary
+        self.Share_Percent = Share_Percent
+        self.tax=0
+        self.share = 0
+
+    def calculate_tax(self):
+        self.tax = self.Salary * self.tax_percentage
+    def calculate_share(self):
+        self.share = self.Salary * self.Share_Percent / 100
+    def display(self):
+        self.calculate_tax()
+        self.calculate_share()
+        print("Company Name:", self.company)
+        print("Name:", self.Name)
+        print("Age:", self.Age)
+        print("Salary:", self.Salary)
+        print("Tax to pay:", self.tax)
+        print("Share to receive:", self.share)
+emp1 = cognizant()
+emp2 = cognizant()
+emp1.set_dim("Alice", 30, 60000, 5)
+emp2.set_dim("Eswar", 28, 70000, 10)
+emp1.display()
+print("---------------------------------------")
+emp2.display()
