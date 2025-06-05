@@ -1,0 +1,5 @@
+file=open("python.txt","w")
+file.write("python programs are done\n")
+file.write("now im in training \n")
+file.close()
+print("Content written")
