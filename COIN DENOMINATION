@@ -1,0 +1,14 @@
+am = [50,20,500,200,100,10,5,2,1]
+am = sorted(am, reverse=True)
+print(am)
+lst = []
+amo = int(input())
+while amo != 0:
+    for i in am:
+        if amo >= i:
+            print(i,end=',')
+            lst.append(i)
+            amo -= i
+            break
+            
+print(sum(lst))
