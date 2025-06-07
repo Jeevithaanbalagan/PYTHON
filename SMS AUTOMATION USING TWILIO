@@ -1,0 +1,9 @@
+from twilio.rest import Client
+account_sid = 'API KEY'
+auth_token = 'AUTH TOKEN'
+twilio_number = ''
+target_number = '+917845463730'
+client = Client(account_sid, auth_token)
+  message = client.messages.create(
+          body="HI DA",from_=twilio_number,to=target_number
+    )
