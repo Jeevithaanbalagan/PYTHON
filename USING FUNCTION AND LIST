@@ -1,0 +1,27 @@
+get=['jeevi','20','cyber','9.23']
+def ls ():
+    print (get[::-1])   
+ls()
+
+
+def add_list(lst):
+    total = 0
+    for i in lst:
+        total = total + i
+    return total
+print(add_list([1, 2, 3,4,5,6,7]))
+
+ 
+
+def longest_name(names):
+    longest = names[0]
+    for name in names:
+        if len(name) > len(longest):
+            longest = name
+    print("The name with the maximum length:", longest)
+names = []
+for i in range(2):
+    name = input(f"Enter name {i + 1}: ")
+    names.append(name)
+
+longest_name(names)
