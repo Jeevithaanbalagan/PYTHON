@@ -1,0 +1,12 @@
+#Write a Python program that takes two numbers as input and returns their product only if the product is less than or equal  to 1000. Otherwise, return their sum.
+
+
+num1=int(input("Enter the number one : "))
+num2=int(input("Enter the number two : "))
+def pro():
+    ans = num1 * num2
+    if ans <= 1000:
+        print(ans)
+    else:
+        print("the number is above 1000")
+pro()
