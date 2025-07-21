@@ -1,0 +1,12 @@
+#Write a Python function that takes a list of integers and returns a new list with only the even numbers, in the same order
+ 
+
+n=input("Enter the numbers separated by spaces : ").split()
+n=[int(i) for i in n]
+def eve():
+    for i in (n):
+        if i%2==0:
+            print(i)          
+        
+eve()
+        
