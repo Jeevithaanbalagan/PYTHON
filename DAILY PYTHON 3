@@ -1,0 +1,24 @@
+# Write a Python program that:
+# - Takes a number as input.
+# - Checks if it’s positive, negative, or zero.
+# - Then checks if it’s even or odd.
+# - Finally, prints a message like:
+# "The number is Positive and Even" or "The number is Zero"
+
+
+def categorize_number(num):
+    if num == 0:
+        return "The number is Zero"
+    
+    category = "Positive" if num > 0 else "Negative"
+    parity = "Even" if num % 2 == 0 else "Odd"
+    
+    message = f"The number is {category} and {parity}"
+    
+    if num > 10:
+        message += ", and Greater than 10"
+    
+    return message
+
+user_input = int(input("Enter a number: "))
+print(categorize_number(user_input))
