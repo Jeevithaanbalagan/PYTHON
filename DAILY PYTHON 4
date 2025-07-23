@@ -1,0 +1,17 @@
+🔹 Question:
+   Write a Python function called filter_even_numbers that takes a list of integers and returns a new list with only the even numbers.
+ 🔹 Bonus Twist (optional):
+ If the list is empty or contains no even numbers, return "No even numbers found" instead.
+
+
+def eve(numbers):
+    evenlst=[num for num in numbers if num % 2 == 0]
+    if not evenlst:
+        return "No even numbers"
+    return evenlst
+
+
+
+var=[1,2,3,4]
+sam=eve(var)
+print(sam)
