@@ -1,0 +1,15 @@
+# Write a Python function that:
+   Filters out words that don’t contain the letter "a" Returns a new list with those converted to uppercase
+
+
+def wrd (words):
+    result=[]
+    for word in words:
+        if 'a' in word:
+            result.append(word.upper())
+    return result
+
+
+words = ["apple", "banana", "cherry", "date", "fig", "grape"]
+print(wrd(words))
+    
