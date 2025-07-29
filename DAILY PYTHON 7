@@ -1,0 +1,15 @@
+Write a Python function that receives a list of elements and an integer k, and returns the k most frequent elements in the list.
+
+from collections import Counter
+
+def top_k_frequent(elements, k):
+    freq_map = Counter(elements)
+
+    sorted_items = sorted(freq_map.items(), key=lambda x: x[1], reverse=True)
+    
+    top_k = [item[0] for item in sorted_items[:k]]
+    
+    return top_k
+
+elements = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
+print(top_k_frequent(elements, 2))  # ['apple', 'banana']
