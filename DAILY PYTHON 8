@@ -1,0 +1,17 @@
+Write a Python function that takes a list of numbers as input and returns a new list containing only the prime numbers from the original list.
+
+number is prime
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True
+
+def filter_primes(num_list):
+    return [num for num in num_list if is_prime(num)]
+
+numbers = [2, 4, 7, 9, 13, 16, 19, 22]
+prime_numbers = filter_primes(numbers)
+print("Prime numbers:", prime_numbers)
